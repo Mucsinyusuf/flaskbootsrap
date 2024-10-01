@@ -1,17 +1,12 @@
 {% extends "stracture.html" %}
 
 {% block main %}
-<h1>This is the home page</h1>
-<form action="/" method="post">
+<h1>Signup page</h1>
+<form action="/signup" method="post">
     <input placeholder="Username" name="username" type="text">
     <input placeholder="Password" name="password" type="password">
+    <input placeholder="favourite_color" name="favourite_color" type="text">
     <input type="submit">
 </form>
 <p>{{ message }}</p>
-<br>
-<br>
-<br>
-<a href="/signup">Sign Up here!!!</a>
-
-
 {% endblock main %}
